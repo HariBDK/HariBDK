@@ -1,0 +1,71 @@
+body{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+   
+}
+.container{
+    margin-top: 40px;
+    height: 350px;
+    width: 480px;
+    border: solid black 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(216, 216, 216) ;
+}
+.display{
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 5px;
+    background-image: url("../ATM/Background.jpg");
+    background-size: cover;
+    color: white;
+}
+#display1{
+    display: none;
+}
+#display2{
+    display: none;
+}
+#display3{
+    display: none;
+}
+span{
+    float: right;
+}
+a{
+   float: right;
+   margin-top: 20px;
+   cursor: pointer;
+   color: white !important;
+}
+.keypad{
+    margin-top: 50px;
+}
+td:hover{
+    background-color: rgb(143, 143, 143);
+    cursor: pointer;
+}
+#wrongpin{
+    visibility: hidden;
+    color: red;
+}
+#thankyou{
+    animation: blink 0.2s infinite;
+    margin-top: 25%;
+    
+}
+#processing{
+    color: rgb(255, 255, 255);
+    animation: blink 0.2s infinite;
+    visibility: hidden;
+}
+@keyframes blink{
+    from{
+        color: white;
+    }
+    to{
+        color: rgba(255, 255, 255, 0.205);
+    }
+}

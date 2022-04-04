@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="../ATM/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="../ATM/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>ATM</h1>
+        <div class="display border border-5 border-secondary  m-3">
+            <h1>Welcome!</h1>
+            <span>
+                <a class="link  link-dark" href="../ATM/withdrawal.html">Withdrawal -></a><br> 
+            <a class="link  link-dark" href="#">Balance Enquery -></a><br>
+            <a class="link  link-dark" href="#">Password Change -></a>
+            </span>
+        </div>
+        <div class="keypad">
+            <table class="table table-bordered border-dark text-center">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>Clr</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>Del</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td rowspan="2" onclick="next()">Enter</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>0</td>
+                    <td>#</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

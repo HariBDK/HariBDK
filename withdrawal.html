@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal page</title>
+    <link rel="stylesheet" href="../ATM/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../ATM/script.js"></script>
+    <script src="../ATM/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>ATM</h1>
+        <div class="display border border-5 border-secondary  m-3">
+            <h1>Withdrawal</h1>
+            <span>
+                <a class="link  link-dark" href="#" id="saving" onclick="saving()">Savings -></a><br> 
+            <a class="link  link-dark" href="#">Current -></a><br>
+            <a class="link  link-dark" href="#">Loan -></a>
+            </span>
+        </div>
+        <div class="display border border-5 border-secondary  m-3" id="display1">
+            <h1>Withdrawal</h1>
+            <input type="number" class="form-control w-50 mt-5 mx-5" placeholder="Enter the Amount" id="txtbox" required>/Rs.
+            <span>
+            <a class="link  link-dark" href="#" onclick="next()">Next -></a>
+            </span>
+        </div>
+        <div class="display border border-5 border-secondary  m-3" id="display2">
+            <h1>Withdrawal</h1>
+            <input type="number" class="form-control w-50 mt-5 mx-5 bg-transparent text-light" placeholder="Enter the Pincode" id="txtbox1" >****
+            <span>
+            <a class="link  link-dark" href="#" onclick="pincode()">Next -></a>
+            <p id="wrongpin">Wrong Pin!</p>            
+            </span>
+            <h1 id="processing">Processing...</h1>
+        </div>
+        <div class="display border border-5 border-secondary  m-3" id="display3">
+            <h1 id="thankyou">Thank You!</h1>
+        </div>
+        <div class="keypad">
+            <table class="table table-bordered border-dark text-center">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>Clr</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>Del</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td rowspan="2" onclick="next()">Enter</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>0</td>
+                    <td>#</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
